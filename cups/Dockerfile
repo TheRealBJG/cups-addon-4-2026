@@ -36,4 +36,4 @@ COPY rootfs /
 EXPOSE 631
 
 HEALTHCHECK \
-    CMD lpstat -r || exit 1
+    CMD curl -f http://localhost:631/ || exit 1
