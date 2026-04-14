@@ -15,21 +15,17 @@ RUN \
     echo "http://dl-cdn.alpinelinux.org/alpine/v$(cat /etc/alpine-release | cut -d'.' -f1,2)/community" >> /etc/apk/repositories && \
     apk update && \
     apk add --no-cache \
-        cups \
-        cups-client \
-        cups-filters \
-        cups-libs \
-        ghostscript \
-        libjpeg-turbo \
-        net-snmp \
-        epson-inkjet-printer-escpr \
-        gutenprint \
-        gcompat \
-        libstdc++ \
-        dpkg \
-        jq \
-        usbutils \
-        libusb
+    cups \
+    cups-client \
+    cups-filters \
+    ghostscript \
+    gutenprint \
+    epson-inkjet-printer-escpr \
+    net-snmp \
+    usbutils \
+    libusb \
+    avahi \
+    avahi dbus
 # Copy data
 COPY rootfs /
 
