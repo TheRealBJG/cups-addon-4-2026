@@ -17,6 +17,7 @@ devices:
   - /dev/bus/usb
 privileged:
   - SYS_ADMIN
+  - NET_ADMIN
 map:
   - data:rw
   - share:rw
