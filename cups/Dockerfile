@@ -18,6 +18,7 @@ RUN \
         cups \
         cups-client \
         cups-filters \
+        cups-utils \
         cups-libs \
         ghostscript \
         libjpeg-turbo \
