@@ -16,16 +16,20 @@ RUN \
     apk update && \
     apk add --no-cache \
         cups \
+        cups-client \
         cups-filters \
+        cups-libs \
         ghostscript \
         libjpeg-turbo \
         net-snmp \
+        epson-inkjet-printer-escpr \
         gutenprint \
         gcompat \
         libstdc++ \
         dpkg \
-        jq
-
+        jq \
+        usbutils \
+        libusb
 # Copy data
 COPY rootfs /
 
