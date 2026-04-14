@@ -17,6 +17,7 @@ RUN \
     apk add --no-cache \
         cups \
         cups-client \
+        cups-bsd \
         cups-filters \
         cups-libs \
         ghostscript \
