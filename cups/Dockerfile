@@ -25,7 +25,8 @@ RUN \
     usbutils \
     libusb \
     avahi \
-    avahi dbus
+    avahi 
+    dbus
 # Copy data
 COPY rootfs /
 
