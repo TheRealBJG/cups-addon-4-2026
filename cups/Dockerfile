@@ -18,6 +18,7 @@ RUN \
     cups \
     cups-client \
     cups-filters \
+    cups-libs \
     ghostscript \
     gutenprint \
     epson-inkjet-printer-escpr \
@@ -25,8 +26,9 @@ RUN \
     usbutils \
     libusb \
     avahi \
-    avahi 
-    dbus
+    dbus \
+    gcompat \
+    libstdc++
 # Copy data
 COPY rootfs /
 
